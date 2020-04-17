@@ -1,3 +1,5 @@
+import { AppComponent } from './app.component';
+
 export class Satellite {
     name: string;
     orbitType: string;
@@ -11,11 +13,13 @@ export class Satellite {
         this.orbitType=orbitType;
         this.operational=operational;
     }
-    shouldShowWarning(){
+    shouldShowWarning() {
         if (this.type.toUpperCase() === 'SPACE DEBRIS'){
-            return true;
+            let changeColor: boolean = true;
+            return changeColor;
         } else {
-            return false;
+            let changeColor: boolean = false;
+            return changeColor;
         }
     }
 }
