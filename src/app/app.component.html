@@ -1,5 +1,6 @@
 <div class="search-form">
-    <input type="text" name="search" (keyup.enter)="search(searchTerm.value)"/>
+    <input #searchTerm type="text" name="search" (keyup.enter)="search(searchTerm.value)"/>
     <button type="submit" (click)="search(searchTerm.value)">Search</button>
 </div>
 <app-orbit-list [satellites]="displayList"></app-orbit-list>
+<!-- <app-orbit-count [satellites]="displayList"></app-orbit-counts> -->
